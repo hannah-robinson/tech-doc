@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: ##13292A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+header {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+code {
+  font-family: monospace;
+  font-size: 1.3rem;
+  background-color: #E7DED9;
+}
+
+a {
+  color: #988780;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Nav bar down lefthand side */
+
+#navbar {
+  width: 12.5%;
+  height: 100%;
+  margin-left: 12%;
+  background-color: #13292A;
+  color: #FFFFFF;
+  position: fixed;
+  overflow: auto;
+  border: 1px solid #FFFFFF;
+  float: right;
+}
+
+#navbar header{
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  border-top: 1px solid #FFFFFF;
+  padding: 1rem;
+}
+
+#navbar li:last-child {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+#navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+#navbar a:hover {
+  background-color: #FFFFFF;
+  color: #13292A;
+  padding: 1rem;
+  display: block;
+}
+
+/* #navbar a.active { 
+  background-color: #FFFFFF;
+  color: #13292A;
+}*/
+
+#main-doc {
+  margin: auto;
+  padding: 2.5em 2em 2em 2.5em;
+  width: 50%;
+  background-color: #FFFFFF;
+}
+
+section {
+  padding-bottom: 3em;
+}
+
+#wrapper {
+  background-color: #13292A;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  #navbar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    margin-left: 0;
+  }
+
+  #main-doc {
+    margin-left: 20%;
+    padding: 2.5em 2em 2em 2.5em;
+    width: 75%;
+    background-color: #FFFFFF;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+
+  #navbar {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    position: relative;
+    overflow: hidden;
+    float: none;
+  }
+
+  #navbar li a {
+    text-align: center;
+    float: none;
+  }
+
+  #navbar a a:hover {
+    display: inline; 
+  }
+
+  #main-doc {
+    width: 90%;
+    margin: 0;
+    margin-left: 0;
+    padding: 1.2rem 1rem 1rem 1rem;
+    float: none;
+  }
+  
+  section {
+    padding-bottom: 2rem;
+  }
+}
